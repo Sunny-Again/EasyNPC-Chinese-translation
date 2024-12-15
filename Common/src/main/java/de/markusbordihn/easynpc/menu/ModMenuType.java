@@ -28,10 +28,10 @@ public enum ModMenuType {
   ;
 
   public ResourceLocation getId() {
-    return new ResourceLocation(Constants.MOD_ID, this.name().toLowerCase());
+    return new ResourceLocation(Constants.MOD_ID, this.name().toLowerCase(java.util.Locale.ROOT));
   }
 
   public String getName() {
-    return this.name().toLowerCase();
+    return this.name().toLowerCase(java.util.Locale.ROOT);
   }
 }

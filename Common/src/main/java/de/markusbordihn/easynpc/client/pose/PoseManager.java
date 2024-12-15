@@ -73,9 +73,9 @@ public class PoseManager {
     try {
       String resourcePath =
           TEXTURE_PREFIX
-              + skinModel.name().toLowerCase()
+              + skinModel.name().toLowerCase(java.util.Locale.ROOT)
               + "/"
-              + animation.getName().replaceAll("[^a-zA-Z0-9_.-]", "").toLowerCase();
+              + animation.getName().replaceAll("[^a-zA-Z0-9_.-]", "").toLowerCase(java.util.Locale.ROOT);
       return new ResourceLocation(Constants.MOD_ID, resourcePath);
     } catch (Exception exception) {
       log.error(

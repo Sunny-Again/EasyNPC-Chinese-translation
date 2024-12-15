@@ -54,6 +54,6 @@ public enum ActionDataType {
   }
 
   public String getId() {
-    return "actionDataType." + this.name().toLowerCase();
+    return "actionDataType." + this.name().toLowerCase(java.util.Locale.ROOT);
   }
 }

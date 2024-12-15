@@ -91,7 +91,7 @@ public class ActionConfigurationScreen<T extends ConfigurationMenu> extends Conf
       Component buttonLabel =
           TextComponent.getTranslatedConfigText(
               "add_action",
-              TextComponent.getTranslatedConfigText(actionEventType.name().toLowerCase()));
+              TextComponent.getTranslatedConfigText(actionEventType.name().toLowerCase(java.util.Locale.ROOT)));
       return new AddButton(
               left,
               top,
@@ -109,7 +109,7 @@ public class ActionConfigurationScreen<T extends ConfigurationMenu> extends Conf
       Component buttonLabel =
           TextComponent.getTranslatedConfigText(
               "edit_action",
-              TextComponent.getTranslatedConfigText(actionEventType.name().toLowerCase()));
+              TextComponent.getTranslatedConfigText(actionEventType.name().toLowerCase(java.util.Locale.ROOT)));
       return new EditButton(
               left,
               top,
