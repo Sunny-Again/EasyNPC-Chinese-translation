@@ -31,6 +31,6 @@ public enum EnvironmentalAttributeType implements EntityAttributeTypeInterface {
   }
 
   public String getAttributeName() {
-    return this.name().toLowerCase();
+    return this.name().toLowerCase(java.util.Locale.ROOT);
   }
 }

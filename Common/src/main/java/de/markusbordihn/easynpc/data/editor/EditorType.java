@@ -45,15 +45,15 @@ public enum EditorType {
   }
 
   public ResourceLocation getId() {
-    return new ResourceLocation(Constants.MOD_ID, this.name().toLowerCase() + "_editor");
+    return new ResourceLocation(Constants.MOD_ID, this.name().toLowerCase(java.util.Locale.ROOT) + "_editor");
   }
 
   public String getName() {
-    return this.name().toLowerCase() + "_editor";
+    return this.name().toLowerCase(java.util.Locale.ROOT) + "_editor";
   }
 
   public Component getEditorTitle(final EasyNPC<?> easyNPC) {
-    String translationKey = Constants.TEXT_CONFIG_PREFIX + this.name().toLowerCase() + ".title";
+    String translationKey = Constants.TEXT_CONFIG_PREFIX + this.name().toLowerCase(java.util.Locale.ROOT) + ".title";
     return TextComponent.getTranslatedTextRaw(
         translationKey, easyNPC.getEntity().getName().getString(20));
   }

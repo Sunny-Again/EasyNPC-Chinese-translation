@@ -336,7 +336,7 @@ public class SpawnerScreen<T extends SpawnerMenu> extends AbstractContainerScree
       Text.drawConfigString(
           guiGraphics,
           this.font,
-          SPAWNER_PREFIX + SpawnerSettingType.SPAWN_RANGE.name().toLowerCase(),
+          SPAWNER_PREFIX + SpawnerSettingType.SPAWN_RANGE.name().toLowerCase(java.util.Locale.ROOT),
           this.spawnerRangeEdit.getX() + labelOffsetX,
           this.spawnerRangeEdit.getY() + labelOffsetY);
     }
@@ -345,7 +345,7 @@ public class SpawnerScreen<T extends SpawnerMenu> extends AbstractContainerScree
       Text.drawConfigString(
           guiGraphics,
           this.font,
-          SPAWNER_PREFIX + SpawnerSettingType.DESPAWN_RANGE.name().toLowerCase(),
+          SPAWNER_PREFIX + SpawnerSettingType.DESPAWN_RANGE.name().toLowerCase(java.util.Locale.ROOT),
           this.spawnerDespawnRangeEdit.getX() + labelOffsetX,
           this.spawnerDespawnRangeEdit.getY() + labelOffsetY);
     }
@@ -354,7 +354,7 @@ public class SpawnerScreen<T extends SpawnerMenu> extends AbstractContainerScree
       Text.drawConfigString(
           guiGraphics,
           this.font,
-          SPAWNER_PREFIX + SpawnerSettingType.REQUIRED_PLAYER_RANGE.name().toLowerCase(),
+          SPAWNER_PREFIX + SpawnerSettingType.REQUIRED_PLAYER_RANGE.name().toLowerCase(java.util.Locale.ROOT),
           this.requiredPlayerRangeEdit.getX() + labelOffsetX,
           this.requiredPlayerRangeEdit.getY() + labelOffsetY);
     }
@@ -363,7 +363,7 @@ public class SpawnerScreen<T extends SpawnerMenu> extends AbstractContainerScree
       Text.drawConfigString(
           guiGraphics,
           this.font,
-          SPAWNER_PREFIX + SpawnerSettingType.DELAY.name().toLowerCase(),
+          SPAWNER_PREFIX + SpawnerSettingType.DELAY.name().toLowerCase(java.util.Locale.ROOT),
           this.delayEdit.getX() + labelOffsetX,
           this.delayEdit.getY() + labelOffsetY);
     }
@@ -372,7 +372,7 @@ public class SpawnerScreen<T extends SpawnerMenu> extends AbstractContainerScree
       Text.drawConfigString(
           guiGraphics,
           this.font,
-          SPAWNER_PREFIX + SpawnerSettingType.MAX_NEARBY_ENTITIES.name().toLowerCase(),
+          SPAWNER_PREFIX + SpawnerSettingType.MAX_NEARBY_ENTITIES.name().toLowerCase(java.util.Locale.ROOT),
           this.maxNearbyEntitiesEdit.getX() + labelOffsetX,
           this.maxNearbyEntitiesEdit.getY() + labelOffsetY);
     }
@@ -381,7 +381,7 @@ public class SpawnerScreen<T extends SpawnerMenu> extends AbstractContainerScree
       Text.drawConfigString(
           guiGraphics,
           this.font,
-          SPAWNER_PREFIX + SpawnerSettingType.SPAWN_COUNT.name().toLowerCase(),
+          SPAWNER_PREFIX + SpawnerSettingType.SPAWN_COUNT.name().toLowerCase(java.util.Locale.ROOT),
           this.spawnCountEdit.getX() + labelOffsetX,
           this.spawnCountEdit.getY() + labelOffsetY);
     }

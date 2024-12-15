@@ -223,8 +223,8 @@ public class CustomModelConfigurationScreen<T extends ConfigurationMenu>
               !BuiltInRegistries.ENTITY_TYPE
                   .getKey(entityType)
                   .toString()
-                  .toLowerCase()
-                  .contains(this.searchFilter.toLowerCase()));
+                  .toLowerCase(java.util.Locale.ROOT)
+                  .contains(this.searchFilter.toLowerCase(java.util.Locale.ROOT)));
     }
     this.numOfEntities = entityKeys.size();
 

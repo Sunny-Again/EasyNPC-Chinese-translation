@@ -28,7 +28,7 @@ public enum BaseAttributeType {
   KNOCKBACK_RESISTANCE;
 
   public String getAttributeName() {
-    return this.name().toLowerCase();
+    return this.name().toLowerCase(java.util.Locale.ROOT);
   }
 
   public String getTagName() {

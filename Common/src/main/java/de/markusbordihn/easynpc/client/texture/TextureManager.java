@@ -219,7 +219,7 @@ public class TextureManager {
   }
 
   public static String getResourceName(String name, String type) {
-    return (TEXTURE_PREFIX + type + "_" + name.replaceAll("[^a-zA-Z0-9_.-]", "")).toLowerCase();
+    return (TEXTURE_PREFIX + type + "_" + name.replaceAll("[^a-zA-Z0-9_.-]", "")).toLowerCase(java.util.Locale.ROOT);
   }
 
   public static String getFileName(UUID uuid) {

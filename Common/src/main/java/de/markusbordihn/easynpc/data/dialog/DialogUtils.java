@@ -96,9 +96,9 @@ public class DialogUtils {
       // Generate random label name
       return type
           + "_"
-          + UUID.randomUUID().toString().substring(0, 8).replace("-", "").toLowerCase();
+          + UUID.randomUUID().toString().substring(0, 8).replace("-", "").toLowerCase(java.util.Locale.ROOT);
     }
-    String label = name.trim().toLowerCase();
+    String label = name.trim().toLowerCase(java.util.Locale.ROOT);
     label = label.replace(" ", "_");
     label = label.replaceAll("[^a-z0-9_]", "");
     return label.length() > maxLength ? label.substring(0, maxLength) : label;

@@ -108,7 +108,7 @@ public class ImportPresetConfigurationScreen<T extends ConfigurationMenu>
     this.getSkinModel();
     return resourceLocation
         .getPath()
-        .replace("preset/" + getSkinModel().toString().toLowerCase() + "/", "")
+        .replace("preset/" + getSkinModel().toString().toLowerCase(java.util.Locale.ROOT) + "/", "")
         .replace(Constants.NPC_NBT_SUFFIX, "");
   }
 

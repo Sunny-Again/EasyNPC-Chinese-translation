@@ -55,7 +55,7 @@ public class WorldPresetDataFiles {
     Path presetDataFolder = getPresetDataFolder();
     String skinModelName = skinModel.name();
     if (!skinModelName.isEmpty()) {
-      Path path = presetDataFolder.resolve(skinModelName.toLowerCase());
+      Path path = presetDataFolder.resolve(skinModelName.toLowerCase(java.util.Locale.ROOT));
       if (!path.toFile().exists() && !path.toFile().mkdirs()) {
         log.error("Could not create preset model folder {}!", path);
       }
@@ -97,7 +97,7 @@ public class WorldPresetDataFiles {
                                       .relativize(path)
                                       .toString()
                                       .replace("\\", "/")
-                                      .toLowerCase());
+                                      .toLowerCase(java.util.Locale.ROOT));
                       presetResourceLocationMap.put(resourceLocation, path);
                       return resourceLocation;
                     })

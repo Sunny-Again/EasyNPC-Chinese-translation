@@ -43,6 +43,6 @@ public enum DisplayAttributeType {
   }
 
   public String getAttributeName() {
-    return this.name().toLowerCase();
+    return this.name().toLowerCase(java.util.Locale.ROOT);
   }
 }

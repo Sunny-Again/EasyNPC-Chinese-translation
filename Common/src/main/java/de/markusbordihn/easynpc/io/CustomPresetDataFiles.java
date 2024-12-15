@@ -126,7 +126,7 @@ public class CustomPresetDataFiles {
                                       .relativize(path)
                                       .toString()
                                       .replace("\\", "/")
-                                      .toLowerCase());
+                                      .toLowerCase(java.util.Locale.ROOT));
                       presetResourceLocationMap.put(resourceLocation, path);
                       return resourceLocation;
                     })

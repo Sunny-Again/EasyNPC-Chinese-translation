@@ -108,7 +108,7 @@ public enum ObjectiveType {
   }
 
   public String getObjectiveName() {
-    return this.name().toLowerCase();
+    return this.name().toLowerCase(java.util.Locale.ROOT);
   }
 
   public String getFriendlyName() {

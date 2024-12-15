@@ -55,12 +55,12 @@ public class CustomTextureManager {
   public static Set<UUID> getCustomTextureCacheKeys(SkinModel skinModel, String searchName) {
     HashSet<UUID> hashSet = new HashSet<>();
     String skinSearchName =
-        searchName != null && !searchName.isEmpty() ? searchName.toLowerCase() : null;
+        searchName != null && !searchName.isEmpty() ? searchName.toLowerCase(java.util.Locale.ROOT) : null;
     for (TextureModelKey textureModelKey : textureCache.keySet()) {
       if (skinModel.equals(textureModelKey.getSkinModel())
           && (skinSearchName == null
               || textureModelKey.getResourceName().isEmpty()
-              || textureModelKey.getResourceName().toLowerCase().contains(skinSearchName))) {
+              || textureModelKey.getResourceName().toLowerCase(java.util.Locale.ROOT).contains(skinSearchName))) {
         hashSet.add(textureModelKey.getUUID());
       }
     }

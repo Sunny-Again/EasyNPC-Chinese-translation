@@ -40,7 +40,7 @@ public class TextUtils {
   }
 
   public static String normalizeString(String string) {
-    String normalizedString = string.toLowerCase().replace("_", " ").replace("-", " ");
+    String normalizedString = string.toLowerCase(java.util.Locale.ROOT).replace("_", " ").replace("-", " ");
     normalizedString =
         normalizedString.substring(0, 1).toUpperCase() + normalizedString.substring(1);
     return normalizedString;
