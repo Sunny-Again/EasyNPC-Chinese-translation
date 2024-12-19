@@ -20,6 +20,7 @@
 package de.markusbordihn.easynpc.data.attribute;
 
 import de.markusbordihn.easynpc.utils.TextUtils;
+import java.util.Locale;
 
 public enum BaseAttributeType {
   ATTACK_DAMAGE,
@@ -28,7 +29,7 @@ public enum BaseAttributeType {
   KNOCKBACK_RESISTANCE;
 
   public String getAttributeName() {
-    return this.name().toLowerCase(java.util.Locale.ROOT);
+    return this.name().toLowerCase(Locale.ROOT);
   }
 
   public String getTagName() {

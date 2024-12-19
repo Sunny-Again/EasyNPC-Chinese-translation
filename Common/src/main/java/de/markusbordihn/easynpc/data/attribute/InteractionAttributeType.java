@@ -20,6 +20,7 @@
 package de.markusbordihn.easynpc.data.attribute;
 
 import de.markusbordihn.easynpc.utils.TextUtils;
+import java.util.Locale;
 
 public enum InteractionAttributeType implements EntityAttributeTypeInterface {
   CAN_BE_LEASHED,
@@ -31,6 +32,6 @@ public enum InteractionAttributeType implements EntityAttributeTypeInterface {
   }
 
   public String getAttributeName() {
-    return this.name().toLowerCase(java.util.Locale.ROOT);
+    return this.name().toLowerCase(Locale.ROOT);
   }
 }

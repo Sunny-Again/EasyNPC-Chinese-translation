@@ -20,6 +20,7 @@
 package de.markusbordihn.easynpc.data.attribute;
 
 import de.markusbordihn.easynpc.utils.TextUtils;
+import java.util.Locale;
 
 public enum CombatAttributeType implements EntityAttributeTypeInterface {
   IS_ATTACKABLE,
@@ -30,6 +31,6 @@ public enum CombatAttributeType implements EntityAttributeTypeInterface {
   }
 
   public String getAttributeName() {
-    return this.name().toLowerCase(java.util.Locale.ROOT);
+    return this.name().toLowerCase(Locale.ROOT);
   }
 }
