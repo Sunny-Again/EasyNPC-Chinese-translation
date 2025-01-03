@@ -37,7 +37,7 @@ A clear and concise description of what you expected to happen.
 If applicable, add screenshots to help explain your problem.
 
 **Debugging** 🛠️
-Before reporting an issue, please enable the debug mode over `/easy_npc debug true` to get more
+Before reporting an issue, please enable the debug mode over `/easy_npc debug log true` to get more
 detailed information about the issue in the logs.
 Additionally, check if there is anything relevant in the crash-reports, debug.log, and latest.log
 file.
